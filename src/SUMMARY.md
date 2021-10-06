@@ -53,9 +53,6 @@
 
 - [JS\_配列と繰り返し](./js/js03/README.md)
 
-  <!-- - [配列](./components/array.md) -->
-  <!-- - [繰り返し処理](./components/for.md) -->
-
   - [配列と繰り返しの練習](./js/js03/array-for.md)
   - [クイズアプリ初級](./js/js03/quiz01.md)
   - [クイズアプリ中級](./js/js03/quiz02.md)
