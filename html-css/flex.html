@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>初回課題の案内 - G's-Fukuoka-Lab06</title>
+        <title>CSS / レイアウト - G's-Fukuoka-Lab06</title>
         
         
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../note/index.html"><strong aria-hidden="true">1.</strong> 講義資料ノート</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../note/first-work.html" class="active"><strong aria-hidden="true">1.1.</strong> 初回課題の案内</a></li><li class="chapter-item expanded "><a href="../note/about.html"><strong aria-hidden="true">1.2.</strong> 受講時の注意</a></li></ol></li><li class="chapter-item expanded "><a href="../html-css/index.html"><strong aria-hidden="true">2.</strong> HTML &amp; CSS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../html-css/about-html-and-css.html"><strong aria-hidden="true">2.1.</strong> HTML と CSS の役割</a></li><li class="chapter-item expanded "><a href="../html-css/get-started.html"><strong aria-hidden="true">2.2.</strong> ファイルの準備と動作確認</a></li><li class="chapter-item expanded "><a href="../html-css/html.html"><strong aria-hidden="true">2.3.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../html-css/css.html"><strong aria-hidden="true">2.4.</strong> CSS / ページ設定，背景，文字の大きさ，色</a></li><li class="chapter-item expanded "><a href="../html-css/inspect.html"><strong aria-hidden="true">2.5.</strong> 【tips】検証画面の活用</a></li><li class="chapter-item expanded "><a href="../html-css/flex.html"><strong aria-hidden="true">2.6.</strong> CSS / レイアウト</a></li><li class="chapter-item expanded "><a href="../html-css/work.html"><strong aria-hidden="true">2.7.</strong> 演習</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../note/index.html"><strong aria-hidden="true">1.</strong> 講義資料ノート</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../note/first-work.html"><strong aria-hidden="true">1.1.</strong> 初回課題の案内</a></li><li class="chapter-item expanded "><a href="../note/about.html"><strong aria-hidden="true">1.2.</strong> 受講時の注意</a></li></ol></li><li class="chapter-item expanded "><a href="../html-css/index.html"><strong aria-hidden="true">2.</strong> HTML &amp; CSS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../html-css/about-html-and-css.html"><strong aria-hidden="true">2.1.</strong> HTML と CSS の役割</a></li><li class="chapter-item expanded "><a href="../html-css/get-started.html"><strong aria-hidden="true">2.2.</strong> ファイルの準備と動作確認</a></li><li class="chapter-item expanded "><a href="../html-css/html.html"><strong aria-hidden="true">2.3.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../html-css/css.html"><strong aria-hidden="true">2.4.</strong> CSS / ページ設定，背景，文字の大きさ，色</a></li><li class="chapter-item expanded "><a href="../html-css/inspect.html"><strong aria-hidden="true">2.5.</strong> 【tips】検証画面の活用</a></li><li class="chapter-item expanded "><a href="../html-css/flex.html" class="active"><strong aria-hidden="true">2.6.</strong> CSS / レイアウト</a></li><li class="chapter-item expanded "><a href="../html-css/work.html"><strong aria-hidden="true">2.7.</strong> 演習</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -165,80 +165,139 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="初回課題の案内"><a class="header" href="#初回課題の案内">初回課題の案内</a></h1>
-<h2 id="web-サイトチーズアカデミーを制作ッ"><a class="header" href="#web-サイトチーズアカデミーを制作ッ">Web サイト「チーズアカデミー」を制作ッ！！</a></h2>
+                        <h1 id="css--レイアウト"><a class="header" href="#css--レイアウト">CSS / レイアウト</a></h1>
+<h2 id="よくあるレイアウト"><a class="header" href="#よくあるレイアウト">よくあるレイアウト</a></h2>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>横並び</td><td>HTML は縦並びがデフォルト．</td></tr>
+<tr><td>左右中央</td><td>HTML は左揃えがデフォルト．</td></tr>
+<tr><td>上下中央</td><td>HTML は上揃えがデフォルト．</td></tr>
+</tbody></table>
+<h2 id="float"><a class="header" href="#float">float．．？</a></h2>
+<p>float を使うと要素を横並びにできる．．．が．．．</p>
+<p><img src="./img/html_css_float.png" alt="float例" /></p>
+<p><a href="https://gray-code.com/html_css/release-float-by-clearfix/">参考：https://gray-code.com/html_css/release-float-by-clearfix/</a></p>
+<p><strong>ものッ！すごくッ！！めんどくさいィィッッッ！！！！</strong></p>
+<h2 id="flexbox-が全てを解決するッ"><a class="header" href="#flexbox-が全てを解決するッ">FlexBox が全てを解決するッ！！</a></h2>
 <ul>
-<li>「チーズアカデミー」の web サイトを HTML と CSS を使って作成！</li>
-<li>制作した web サイトをブラウザで開いたときにデザインと同様に．</li>
-<li>細かい数値は厳密でなくて OK！</li>
+<li>横並び</li>
+<li>左右中央揃え</li>
+<li>上下中央揃え</li>
 </ul>
-<p>↓ 画面イメージ（一部）</p>
-<p><img src="./img/cheese_image.png" alt="画面イメージ" /></p>
-<h2 id="必要なファイルや素材"><a class="header" href="#必要なファイルや素材">必要なファイルや素材</a></h2>
-<p>まずは下記の URL からダウンロードしましょう．案内と材料が全て入っています！</p>
-<p><a href="../samples/00_first_work.zip">download</a></p>
-<h3 id="完成イメージ"><a class="header" href="#完成イメージ">完成イメージ</a></h3>
+<h3 id="html-のイメージ"><a class="header" href="#html-のイメージ">HTML のイメージ</a></h3>
+<p>下記のような要素を想定する（主な部分のみ記述）．</p>
+<pre><code class="language-html">&lt;div class=&quot;l_box&quot;&gt;
+  &lt;div class=&quot;s_box sienna&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s_box firebrick&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s_box maroon&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s_box darkmagenta&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s_box indigo&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>↓ 画面上はこんな感じ</p>
+<p><img src="./img/html_css_flex_unset.png" alt="初期状態" /></p>
+<h3 id="横並び"><a class="header" href="#横並び">横並び</a></h3>
+<p><code>display: flex;</code> を記述！</p>
 <ul>
-<li><code>assets/cheese-academy-sizing.png</code> に入っています！</li>
+<li>HTML は縦並びがデフォルト．</li>
+<li><code>display: flex;</code> を使用すると横並びにできる！</li>
 </ul>
-<h3 id="html"><a class="header" href="#html">HTML</a></h3>
+<blockquote>
+<p><strong>💡 Point</strong></p>
+<p><code>display: flex;</code> に関連する CSS は「レイアウトを制御したい要素の外側の要素」に記述する！</p>
+</blockquote>
+<pre><code class="language-css">.l_box {
+  display: flex;
+}
+</code></pre>
+<p><img src="./img/html_css_flex_flex.png" alt="横並び" /></p>
+<h3 id="左右中央揃え"><a class="header" href="#左右中央揃え">左右中央揃え</a></h3>
+<p><code>justify-content: center;</code> を記述！</p>
 <ul>
-<li>HTML は <code>index.html</code> ファイルに記述！</li>
-<li>必要な文章は <code>assets/text.txt</code> に書いてあるのでコピペして使おう！</li>
+<li>HTML は左揃えがデフォルト．</li>
+<li><code>justify-content: center;</code> を使用すると左右中央揃えにできる！</li>
 </ul>
-<h3 id="css"><a class="header" href="#css">CSS</a></h3>
+<blockquote>
+<p><strong>💡 Point</strong></p>
+<p><code>display: flex;</code> は常に記述する必要あり！</p>
+</blockquote>
+<pre><code class="language-css">.l_box {
+  display: flex;
+  justify-content: center;
+}
+</code></pre>
+<p><img src="./img/html_css_flex_justify_center.png" alt="左右中央" /></p>
+<h3 id="上下左右中央揃え"><a class="header" href="#上下左右中央揃え">上下左右中央揃え</a></h3>
+<p><code>align-items: center;</code> を記述！</p>
 <ul>
-<li>CSS は <code>css/style.css</code> ファイルに記述！</li>
+<li>HTML は上揃えがデフォルト．</li>
+<li><code>align-items: center;</code> を使用すると上下中央揃えにできる！</li>
 </ul>
-<h2 id="参考情報"><a class="header" href="#参考情報">参考情報</a></h2>
-<p>制作に使用するエディタについて</p>
+<pre><code class="language-css">.l_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</code></pre>
+<p><img src="./img/html_css_flex_align_center.png" alt="上下左右中央" /></p>
+<h3 id="縦並びが良い場合"><a class="header" href="#縦並びが良い場合">縦並びが良い場合</a></h3>
+<p><code>flex-direction: column;</code> を記述！</p>
 <ul>
-<li><a href="https://arrown-blog.com/visual-studio-code/">https://arrown-blog.com/visual-studio-code/</a></li>
+<li>flex は横並びがデフォルト．</li>
+<li><code>flex-direction: column;</code> を使用すると縦横の並び方を制御できる！</li>
 </ul>
-<p>課題クリアに必須級「chrome 検証ツール」</p>
+<pre><code class="language-css">.l_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+</code></pre>
+<p><img src="./img/html_css_flex_column.png" alt="縦並び" /></p>
+<h3 id="参考いい感じに並べたいとき"><a class="header" href="#参考いい感じに並べたいとき">【参考】いい感じに並べたいとき</a></h3>
+<p>均等な感じにしたい場合にも設定できる．</p>
+<p>↓ 端に寄せつつ均等に並べる <code>space-between</code></p>
+<pre><code class="language-css">.l_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+</code></pre>
+<p><img src="./img/html_css_flex_justify_between.png" alt="between" /></p>
+<p>↓ 均等に余白をつくって並べる <code>space-evenly</code></p>
+<pre><code class="language-css">.l_box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+</code></pre>
+<p><img src="./img/html_css_flex_justify_evenly.png" alt="evenly" /></p>
+<h2 id="練習"><a class="header" href="#練習">練習</a></h2>
+<p><strong>FlexBox を駆使して横並び部分を実装しよう！</strong></p>
+<p>ヒント！！</p>
+<p>横並びの幅を均等にしたい！</p>
 <ul>
-<li><a href="https://arrown-blog.com/devtool-htmlcss/">https://arrown-blog.com/devtool-htmlcss/</a></li>
+<li>横に並んでいる div の width を「50%」にしよう！</li>
 </ul>
-<p>CSS が効かねええ(｀；ω；´)</p>
+<p>画像がはみ出す！</p>
 <ul>
-<li><a href="https://arrown-blog.com/css-match-resolve/">https://arrown-blog.com/css-match-resolve/</a></li>
+<li>画像の width を「100%」に設定すると箱の幅に合わせてくれる！</li>
+<li>高さが足りないときは height も「100%」！</li>
+<li>画像の比率がおかしいときは「object-fit」でググれ！</li>
 </ul>
-<h2 id="締切"><a class="header" href="#締切">締切</a></h2>
-<ul>
-<li>JavaScript 1 回目（2021/10/19）講義開始時</li>
-</ul>
-<h2 id="提出方法"><a class="header" href="#提出方法">提出方法</a></h2>
-<ul>
-<li>上記講義につくったものを持参（自分の PC で見せられる状態になっていれば OK）</li>
-</ul>
-<h2 id="進め方"><a class="header" href="#進め方">進め方</a></h2>
-<ul>
-<li>仕様書の<strong>細かい数値にはこだわらなくて良い</strong>です（自分がいい感じになったと判断すれば OK）．</li>
-<li><strong>【重要】だいたい仕様書通りにできたら，オリジナリティを表現（魔改造）しよう！！</strong></li>
-</ul>
-<h2 id="重要魔改造の例"><a class="header" href="#重要魔改造の例">【重要】魔改造の例</a></h2>
-<ul>
-<li>レスポンシブ対応した</li>
-<li>コナミコマンドを入力すると怪しいサイトに変化するようにした</li>
-<li>チーズを集める 3D ゲームをつくった</li>
-<li>PHP でニュースを投稿できるようにした</li>
-<li>iOS アプリケーションをつくった</li>
-</ul>
-<p><strong>ジーズは「普通」では生き残れない！</strong></p>
-<p><strong>誰よりもヤバいものつくって目立て！！</strong></p>
+<p><img src="./img/html_css_work_flex.png" alt="flex実装後" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../note/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../html-css/inspect.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../note/about.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../html-css/work.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -250,13 +309,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../note/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../html-css/inspect.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../note/about.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../html-css/work.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

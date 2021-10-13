@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>初回課題の案内 - G's-Fukuoka-Lab06</title>
+        <title>CSS / ページ設定，背景，文字の大きさ，色 - G's-Fukuoka-Lab06</title>
         
         
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../note/index.html"><strong aria-hidden="true">1.</strong> 講義資料ノート</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../note/first-work.html" class="active"><strong aria-hidden="true">1.1.</strong> 初回課題の案内</a></li><li class="chapter-item expanded "><a href="../note/about.html"><strong aria-hidden="true">1.2.</strong> 受講時の注意</a></li></ol></li><li class="chapter-item expanded "><a href="../html-css/index.html"><strong aria-hidden="true">2.</strong> HTML &amp; CSS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../html-css/about-html-and-css.html"><strong aria-hidden="true">2.1.</strong> HTML と CSS の役割</a></li><li class="chapter-item expanded "><a href="../html-css/get-started.html"><strong aria-hidden="true">2.2.</strong> ファイルの準備と動作確認</a></li><li class="chapter-item expanded "><a href="../html-css/html.html"><strong aria-hidden="true">2.3.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../html-css/css.html"><strong aria-hidden="true">2.4.</strong> CSS / ページ設定，背景，文字の大きさ，色</a></li><li class="chapter-item expanded "><a href="../html-css/inspect.html"><strong aria-hidden="true">2.5.</strong> 【tips】検証画面の活用</a></li><li class="chapter-item expanded "><a href="../html-css/flex.html"><strong aria-hidden="true">2.6.</strong> CSS / レイアウト</a></li><li class="chapter-item expanded "><a href="../html-css/work.html"><strong aria-hidden="true">2.7.</strong> 演習</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../note/index.html"><strong aria-hidden="true">1.</strong> 講義資料ノート</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../note/first-work.html"><strong aria-hidden="true">1.1.</strong> 初回課題の案内</a></li><li class="chapter-item expanded "><a href="../note/about.html"><strong aria-hidden="true">1.2.</strong> 受講時の注意</a></li></ol></li><li class="chapter-item expanded "><a href="../html-css/index.html"><strong aria-hidden="true">2.</strong> HTML &amp; CSS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../html-css/about-html-and-css.html"><strong aria-hidden="true">2.1.</strong> HTML と CSS の役割</a></li><li class="chapter-item expanded "><a href="../html-css/get-started.html"><strong aria-hidden="true">2.2.</strong> ファイルの準備と動作確認</a></li><li class="chapter-item expanded "><a href="../html-css/html.html"><strong aria-hidden="true">2.3.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../html-css/css.html" class="active"><strong aria-hidden="true">2.4.</strong> CSS / ページ設定，背景，文字の大きさ，色</a></li><li class="chapter-item expanded "><a href="../html-css/inspect.html"><strong aria-hidden="true">2.5.</strong> 【tips】検証画面の活用</a></li><li class="chapter-item expanded "><a href="../html-css/flex.html"><strong aria-hidden="true">2.6.</strong> CSS / レイアウト</a></li><li class="chapter-item expanded "><a href="../html-css/work.html"><strong aria-hidden="true">2.7.</strong> 演習</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -165,80 +165,109 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="初回課題の案内"><a class="header" href="#初回課題の案内">初回課題の案内</a></h1>
-<h2 id="web-サイトチーズアカデミーを制作ッ"><a class="header" href="#web-サイトチーズアカデミーを制作ッ">Web サイト「チーズアカデミー」を制作ッ！！</a></h2>
+                        <h1 id="css--ページ設定背景文字の大きさ色"><a class="header" href="#css--ページ設定背景文字の大きさ色">CSS / ページ設定，背景，文字の大きさ，色</a></h1>
+<h2 id="css-の基本的な記述方法"><a class="header" href="#css-の基本的な記述方法">CSS の基本的な記述方法</a></h2>
+<p>CSS は「css ファイル」に記述する．</p>
+<p>CSS の命令の適用箇所は HTML 要素（タグやクラス名）を指定する．HTML 要素にクラス名をつけることで，細かく適用箇所を制御することができる．</p>
+<pre><code class="language-css">body {
+  /* タグに対して指定 */
+  /* ここに文字の色やサイズなどを指定する命令を書く */
+}
+
+.hoge {
+  /* `.` でクラス名で指定 */
+}
+
+.hoge,
+.fuga {
+  /* 複数のクラスに適用 */
+}
+
+.hoge .fuga {
+  /* hoge クラス要素の下にある fuga クラスに適用 */
+}
+</code></pre>
+<p>↓ HTML 要素にクラス名をつける例</p>
+<pre><code class="language-html">&lt;div class=&quot;hoge&quot;&gt;
+  &lt;h1 class=&quot;title&quot;&gt;セカイを変えるGEEKになろう&lt;/h1&gt;
+  &lt;p class=&quot;fuga&quot;&gt;G's ACADEMY FUKUOKA&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="ページのサイズ指定"><a class="header" href="#ページのサイズ指定">ページのサイズ指定</a></h2>
+<p>サイズは幅と高さを指定する．</p>
+<pre><code class="language-css">/* 幅を指定 */
+.box {
+  width: 480px;
+}
+
+/* 幅と高さを指定 */
+.box {
+  width: 480px;
+  height: 360px;
+}
+</code></pre>
+<p>今回は<code>&lt;body&gt;</code>タグに対して指定し，ページ全体の幅を 960px に設定する．</p>
+<pre><code class="language-css">body {
+  /* body の幅を 960 px に設定する */
+  width: 960px;
+}
+</code></pre>
+<h2 id="背景の色写真の設定"><a class="header" href="#背景の色写真の設定">背景の色，写真の設定</a></h2>
+<p>色や画像を設定する．</p>
+<pre><code class="language-css">/* 背景を赤くする場合（#rrggbbの形式でも可） */
+.box {
+  background: red;
+}
+
+/* 背景に画像を設定する場合（画像ファイルの場所を指定する） */
+.box {
+  background: url(../img/main_bg.jpg);
+}
+</code></pre>
+<p>画像の場合は大きさや位置を設定するとかっこいい感じになる．</p>
+<pre><code class="language-css">/* 背景画像の大きさ */
+.box {
+  background-size: cover;
+}
+
+/* 背景画像の位置 */
+.box {
+  background-position: center;
+}
+</code></pre>
+<h2 id="文字の色大きさの設定"><a class="header" href="#文字の色大きさの設定">文字の色，大きさの設定</a></h2>
+<pre><code class="language-css">/* 文字の大きさ */
+.title {
+  font-size: 36px;
+}
+
+/* 文字の色（#rrggbbの形式でも可） */
+.title {
+  color: white;
+}
+</code></pre>
+<h2 id="練習"><a class="header" href="#練習">練習</a></h2>
+<p>練習用 Web サイトの以下の部分を実装しよう！</p>
 <ul>
-<li>「チーズアカデミー」の web サイトを HTML と CSS を使って作成！</li>
-<li>制作した web サイトをブラウザで開いたときにデザインと同様に．</li>
-<li>細かい数値は厳密でなくて OK！</li>
+<li>ページのサイズ設定（全体の幅を 960px に）</li>
+<li>タイトルの背景部分に写真（<code>main_bg.jpg</code>）を設定</li>
+<li>タイトル文字の大きさと色を変更（見やすい感じになれば OK！）</li>
 </ul>
-<p>↓ 画面イメージ（一部）</p>
-<p><img src="./img/cheese_image.png" alt="画面イメージ" /></p>
-<h2 id="必要なファイルや素材"><a class="header" href="#必要なファイルや素材">必要なファイルや素材</a></h2>
-<p>まずは下記の URL からダウンロードしましょう．案内と材料が全て入っています！</p>
-<p><a href="../samples/00_first_work.zip">download</a></p>
-<h3 id="完成イメージ"><a class="header" href="#完成イメージ">完成イメージ</a></h3>
-<ul>
-<li><code>assets/cheese-academy-sizing.png</code> に入っています！</li>
-</ul>
-<h3 id="html"><a class="header" href="#html">HTML</a></h3>
-<ul>
-<li>HTML は <code>index.html</code> ファイルに記述！</li>
-<li>必要な文章は <code>assets/text.txt</code> に書いてあるのでコピペして使おう！</li>
-</ul>
-<h3 id="css"><a class="header" href="#css">CSS</a></h3>
-<ul>
-<li>CSS は <code>css/style.css</code> ファイルに記述！</li>
-</ul>
-<h2 id="参考情報"><a class="header" href="#参考情報">参考情報</a></h2>
-<p>制作に使用するエディタについて</p>
-<ul>
-<li><a href="https://arrown-blog.com/visual-studio-code/">https://arrown-blog.com/visual-studio-code/</a></li>
-</ul>
-<p>課題クリアに必須級「chrome 検証ツール」</p>
-<ul>
-<li><a href="https://arrown-blog.com/devtool-htmlcss/">https://arrown-blog.com/devtool-htmlcss/</a></li>
-</ul>
-<p>CSS が効かねええ(｀；ω；´)</p>
-<ul>
-<li><a href="https://arrown-blog.com/css-match-resolve/">https://arrown-blog.com/css-match-resolve/</a></li>
-</ul>
-<h2 id="締切"><a class="header" href="#締切">締切</a></h2>
-<ul>
-<li>JavaScript 1 回目（2021/10/19）講義開始時</li>
-</ul>
-<h2 id="提出方法"><a class="header" href="#提出方法">提出方法</a></h2>
-<ul>
-<li>上記講義につくったものを持参（自分の PC で見せられる状態になっていれば OK）</li>
-</ul>
-<h2 id="進め方"><a class="header" href="#進め方">進め方</a></h2>
-<ul>
-<li>仕様書の<strong>細かい数値にはこだわらなくて良い</strong>です（自分がいい感じになったと判断すれば OK）．</li>
-<li><strong>【重要】だいたい仕様書通りにできたら，オリジナリティを表現（魔改造）しよう！！</strong></li>
-</ul>
-<h2 id="重要魔改造の例"><a class="header" href="#重要魔改造の例">【重要】魔改造の例</a></h2>
-<ul>
-<li>レスポンシブ対応した</li>
-<li>コナミコマンドを入力すると怪しいサイトに変化するようにした</li>
-<li>チーズを集める 3D ゲームをつくった</li>
-<li>PHP でニュースを投稿できるようにした</li>
-<li>iOS アプリケーションをつくった</li>
-</ul>
-<p><strong>ジーズは「普通」では生き残れない！</strong></p>
-<p><strong>誰よりもヤバいものつくって目立て！！</strong></p>
+<p>↓ ここまでのイメージ</p>
+<p><img src="./img/html_css_work_css.png" alt="css前半の完成イメージ" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="../note/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../html-css/html.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="../note/about.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../html-css/inspect.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -250,13 +279,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="../note/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../html-css/html.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="../note/about.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../html-css/inspect.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
