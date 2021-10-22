@@ -32,7 +32,7 @@
 - [Git](./git/README.md)
 
   - [GUI と CLI](./git/cli.md)
-  <!-- - [Git](./git/git.md)
+  - [Git](./git/git.md)
   - [GitHub 概要](./git/github-about.md)
   - [GitHub 設定](./git/github-setup/README.md)
     - [SSH 鍵の発行](./git/github-setup/setup-ssh-key.md)
@@ -40,7 +40,7 @@
     - [GitHub への SSH 鍵登録](./git/github-setup/add-ssy-key-to-github.md)
     - [GitHub との接続設定](./git/github-setup/connect-to-github.md)
   - [GitHub にプロダクトを push](./git/github-init.md)
-  - [GitHub に最新版を push](./git/github-push.md) -->
+  - [GitHub に最新版を push](./git/github-push.md)
 
 <!-- - [JS\_メモパッド](./js/js02/README.md)
 
