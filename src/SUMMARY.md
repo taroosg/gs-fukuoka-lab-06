@@ -41,6 +41,7 @@
     - [GitHub との接続設定](./git/github-setup/connect-to-github.md)
   - [GitHub にプロダクトを push](./git/github-init.md)
   - [GitHub に最新版を push](./git/github-push.md)
+  - [GitHub Pages を用いたデプロイ](./git/github-pages.md)
 
 <!-- - [JS\_メモパッド](./js/js02/README.md)
 
