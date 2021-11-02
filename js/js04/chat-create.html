@@ -194,16 +194,15 @@
 </blockquote>
 <pre><code class="language-js">// chatapp.html
 
-// 🔽 編集 / `9.0.2`の部分をFirestoreから貼り付けたコードのバージョンに合わせる
-import { initializeApp } from &quot;https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js&quot;;
+import { initializeApp } from &quot;https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js&quot;;
 
-// 🔽 追加
+// 🔽 追加 / `9.2.0`の部分を↑のFirestoreから貼り付けたコードのバージョンに合わせる
 import {
   getFirestore,
   collection,
   addDoc,
   serverTimestamp,
-} from &quot;https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js&quot;;
+} from &quot;https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js&quot;;
 
 const firebaseConfig = {
   // 省略
