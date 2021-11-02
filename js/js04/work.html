@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>課題と提出時の注意点 - G's-Fukuoka-Lab06</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../../favicon.png">
+        
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../note/index.html"><strong aria-hidden="true">1.</strong> 講義資料ノート</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../note/first-work.html"><strong aria-hidden="true">1.1.</strong> 初回課題の案内</a></li><li class="chapter-item expanded "><a href="../../note/about.html"><strong aria-hidden="true">1.2.</strong> 受講時の注意</a></li><li class="chapter-item expanded "><a href="../../note/with-code.html"><strong aria-hidden="true">1.3.</strong> コードへの向き合い方</a></li><li class="chapter-item expanded "><a href="../../note/for-work.html"><strong aria-hidden="true">1.4.</strong> 課題にチャレンジするコツ</a></li><li class="chapter-item expanded "><a href="../../note/chat.html"><strong aria-hidden="true">1.5.</strong> 雑談コーナー</a></li></ol></li><li class="chapter-item expanded "><a href="../../html-css/index.html"><strong aria-hidden="true">2.</strong> HTML &amp; CSS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../html-css/about-html-and-css.html"><strong aria-hidden="true">2.1.</strong> HTML と CSS の役割</a></li><li class="chapter-item expanded "><a href="../../html-css/get-started.html"><strong aria-hidden="true">2.2.</strong> ファイルの準備と動作確認</a></li><li class="chapter-item expanded "><a href="../../html-css/html.html"><strong aria-hidden="true">2.3.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../../html-css/css.html"><strong aria-hidden="true">2.4.</strong> CSS / ページ設定，背景，文字の大きさ，色</a></li><li class="chapter-item expanded "><a href="../../html-css/inspect.html"><strong aria-hidden="true">2.5.</strong> 【tips】検証画面の活用</a></li><li class="chapter-item expanded "><a href="../../html-css/flex.html"><strong aria-hidden="true">2.6.</strong> CSS / レイアウト</a></li><li class="chapter-item expanded "><a href="../../html-css/work.html"><strong aria-hidden="true">2.7.</strong> 演習</a></li></ol></li><li class="chapter-item expanded "><a href="../../js/js01/index.html"><strong aria-hidden="true">3.</strong> JS_おみくじ</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../js/js01/about-js.html"><strong aria-hidden="true">3.1.</strong> JavaScript とは</a></li><li class="chapter-item expanded "><a href="../../js/js01/variable.html"><strong aria-hidden="true">3.2.</strong> 変数と計算</a></li><li class="chapter-item expanded "><a href="../../js/js01/random.html"><strong aria-hidden="true">3.3.</strong> ランダムな数（乱数）をつくる</a></li><li class="chapter-item expanded "><a href="../../js/js01/if.html"><strong aria-hidden="true">3.4.</strong> 条件分岐</a></li><li class="chapter-item expanded "><a href="../../js/js01/omikuji.html"><strong aria-hidden="true">3.5.</strong> おみくじの Web アプリ実装</a></li><li class="chapter-item expanded "><a href="../../js/js01/work.html"><strong aria-hidden="true">3.6.</strong> 課題</a></li></ol></li><li class="chapter-item expanded "><a href="../../git/index.html"><strong aria-hidden="true">4.</strong> Git</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../git/cli.html"><strong aria-hidden="true">4.1.</strong> GUI と CLI</a></li><li class="chapter-item expanded "><a href="../../git/git.html"><strong aria-hidden="true">4.2.</strong> Git</a></li><li class="chapter-item expanded "><a href="../../git/github-about.html"><strong aria-hidden="true">4.3.</strong> GitHub 概要</a></li><li class="chapter-item expanded "><a href="../../git/github-setup/index.html"><strong aria-hidden="true">4.4.</strong> GitHub 設定</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../git/github-setup/setup-ssh-key.html"><strong aria-hidden="true">4.4.1.</strong> SSH 鍵の発行</a></li><li class="chapter-item expanded "><a href="../../git/github-setup/config.html"><strong aria-hidden="true">4.4.2.</strong> 設定ファイルの編集</a></li><li class="chapter-item expanded "><a href="../../git/github-setup/add-ssy-key-to-github.html"><strong aria-hidden="true">4.4.3.</strong> GitHub への SSH 鍵登録</a></li><li class="chapter-item expanded "><a href="../../git/github-setup/connect-to-github.html"><strong aria-hidden="true">4.4.4.</strong> GitHub との接続設定</a></li></ol></li><li class="chapter-item expanded "><a href="../../git/github-init.html"><strong aria-hidden="true">4.5.</strong> GitHub にプロダクトを push</a></li><li class="chapter-item expanded "><a href="../../git/github-push.html"><strong aria-hidden="true">4.6.</strong> GitHub に最新版を push</a></li><li class="chapter-item expanded "><a href="../../git/github-pages.html"><strong aria-hidden="true">4.7.</strong> GitHub Pages を用いたデプロイ</a></li></ol></li><li class="chapter-item expanded "><a href="../../js/js02/index.html"><strong aria-hidden="true">5.</strong> JS_メモパッド</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../js/js02/array.html"><strong aria-hidden="true">5.1.</strong> 配列</a></li><li class="chapter-item expanded "><a href="../../js/js02/for.html"><strong aria-hidden="true">5.2.</strong> 繰り返し処理</a></li><li class="chapter-item expanded "><a href="../../js/js02/object.html"><strong aria-hidden="true">5.3.</strong> オブジェクト</a></li><li class="chapter-item expanded "><a href="../../js/js02/memopad01.html"><strong aria-hidden="true">5.4.</strong> LocalStorage（メモ帳初級）</a></li><li class="chapter-item expanded "><a href="../../js/js02/memopad02.html"><strong aria-hidden="true">5.5.</strong> JSON データ（メモ帳中級）</a></li><li class="chapter-item expanded "><a href="../../js/js02/work.html"><strong aria-hidden="true">5.6.</strong> 課題</a></li></ol></li><li class="chapter-item expanded "><a href="../../js/js03/index.html"><strong aria-hidden="true">6.</strong> JS_配列と繰り返し</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../js/js03/array-for.html"><strong aria-hidden="true">6.1.</strong> 配列と繰り返しの練習</a></li><li class="chapter-item expanded "><a href="../../js/js03/quiz01.html"><strong aria-hidden="true">6.2.</strong> クイズアプリ初級</a></li><li class="chapter-item expanded "><a href="../../js/js03/quiz02.html"><strong aria-hidden="true">6.3.</strong> クイズアプリ中級</a></li><li class="chapter-item expanded "><a href="../../js/js03/work.html"><strong aria-hidden="true">6.4.</strong> 課題</a></li></ol></li><li class="chapter-item expanded "><a href="../../js/js04/index.html"><strong aria-hidden="true">7.</strong> JS_Firebase</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../js/js04/function.html"><strong aria-hidden="true">7.1.</strong> 関数</a></li><li class="chapter-item expanded "><a href="../../js/js04/chat-app.html"><strong aria-hidden="true">7.2.</strong> リアルタイムチャットの実装</a></li><li class="chapter-item expanded "><a href="../../js/js04/firebase-project.html"><strong aria-hidden="true">7.3.</strong> Firebase の準備 1（プロジェクトの作成）</a></li><li class="chapter-item expanded "><a href="../../js/js04/firebase-js.html"><strong aria-hidden="true">7.4.</strong> Firebase の準備 2（ソースコードの準備）</a></li><li class="chapter-item expanded "><a href="../../js/js04/firebase-db.html"><strong aria-hidden="true">7.5.</strong> Firebase の準備 3（データベースの準備）</a></li><li class="chapter-item expanded "><a href="../../js/js04/chat-create.html"><strong aria-hidden="true">7.6.</strong> チャット画面の実装とデータの送信</a></li><li class="chapter-item expanded "><a href="../../js/js04/chat-read.html"><strong aria-hidden="true">7.7.</strong> データのリアルタイム取得と画面表示</a></li><li class="chapter-item expanded "><a href="../../js/js04/optimize.html"><strong aria-hidden="true">7.8.</strong> 機能追加</a></li><li class="chapter-item expanded "><a href="../../js/js04/work.html" class="active"><strong aria-hidden="true">7.9.</strong> 課題と提出時の注意点</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">G's-Fukuoka-Lab06</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="課題と提出時の注意点"><a class="header" href="#課題と提出時の注意点">課題と提出時の注意点</a></h1>
+<p><strong>Firebase を使用したアプリを実装しよう！</strong></p>
+<p>Firebase を用いることで複数の端末での双方向的なやり取りを実装することが可能となる．</p>
+<p>今回はデータを追加していく方式で実装したが，データを削除したり上書きしたりすることも可能だ．</p>
+<p>今回使用した Firestore 以外にも様々な機能がある．本気出せば Web アプリケーションを全て実装してデプロイできるだけの可能性を秘めた技術であるッ！</p>
+<ul>
+<li>認証（Authentication）</li>
+<li>ファイル保存（Storage）</li>
+<li>デプロイ（Hosting）</li>
+<li>サーバサイドの実装（Functions）</li>
+</ul>
+<h2 id="実装例"><a class="header" href="#実装例">実装例</a></h2>
+<ul>
+<li>スタンプ送信機能</li>
+<li>オンラインでじゃんけん</li>
+<li>出席管理システム</li>
+<li>オリジナル SNS</li>
+<li>MMORPG を開発</li>
+</ul>
+<h2 id="-注意点"><a class="header" href="#-注意点">⚠️ 注意点</a></h2>
+<h3 id="api-キーの扱い"><a class="header" href="#api-キーの扱い">API キーの扱い</a></h3>
+<ul>
+<li>Firebase には API キーが必要になります．</li>
+<li>誰でも見られる Github にあげてしまうとあまりよろしくない．</li>
+</ul>
+<p>Github に push する前に．．．</p>
+<ul>
+<li><code>git add .</code>する前に API キー部分は一旦削除しておきましょう．</li>
+<li>提出フォームのコメント欄に API キーを記述してください！</li>
+</ul>
+<pre><code class="language-html">&lt;script type=&quot;module&quot;&gt;
+  import { initializeApp } from &quot;https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js&quot;;
+  import {
+    getFirestore,
+    collection,
+    addDoc,
+    serverTimestamp,
+    query,
+    orderBy,
+    onSnapshot,
+  } from &quot;https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js&quot;;
+
+  const firebaseConfig = {
+    // 🔽この1行を`git add .`する前に一旦削除！削除したAPIキーは「提出フォームのAPIkey欄」に記述！
+    apiKey: &quot;AIzaSyD7uBPYxKsUJQrJ94D8Ss5Ss5ETRpUzNbs&quot;,
+    authDomain: &quot;chatapp-4cdef.firebaseapp.com&quot;,
+    projectId: &quot;chatapp-4cdef&quot;,
+    storageBucket: &quot;chatapp-4cdef.appspot.com&quot;,
+    messagingSenderId: &quot;647489237948&quot;,
+    appId: &quot;1:647489237948:web:1a75f2713344937854f1b9&quot;,
+  };
+
+  const app = initializeApp(firebaseConfig);
+
+  // 以下，JavaScriptのコードたくさん
+&lt;/script&gt;
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../js/js04/optimize.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../js/js04/optimize.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
