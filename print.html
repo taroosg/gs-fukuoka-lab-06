@@ -3279,7 +3279,7 @@ $(&quot;#text&quot;).on(&quot;keydown&quot;, function (e) {
       text: $(&quot;#text&quot;).val(),
       time: serverTimestamp(),
     };
-    addDoc(data);
+    addDoc(collection(db, &quot;chat&quot;), data);
     $(&quot;#text&quot;).val(&quot;&quot;);
   }
 });
