@@ -40,6 +40,7 @@ name と text の入力欄を作成する．
 ```js
 // chatapp.html
 
+// 🔽 編集 / `9.0.2`の部分をFirestoreから貼り付けたコードのバージョンに合わせる
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
 
 // 🔽 追加
@@ -90,7 +91,7 @@ const data = {
   text: $("#text").val(),
   time: serverTimestamp(),
 };
-addDoc(data);
+addDoc(collection(db, "chat"), data);
 $("#text").val("");
 ```
 
