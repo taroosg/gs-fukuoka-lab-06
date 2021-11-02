@@ -194,6 +194,7 @@
 </blockquote>
 <pre><code class="language-js">// chatapp.html
 
+// 🔽 編集 / `9.0.2`の部分をFirestoreから貼り付けたコードのバージョンに合わせる
 import { initializeApp } from &quot;https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js&quot;;
 
 // 🔽 追加
@@ -236,7 +237,7 @@ const data = {
   text: $(&quot;#text&quot;).val(),
   time: serverTimestamp(),
 };
-addDoc(data);
+addDoc(collection(db, &quot;chat&quot;), data);
 $(&quot;#text&quot;).val(&quot;&quot;);
 </code></pre>
 <h2 id="動作確認"><a class="header" href="#動作確認">動作確認</a></h2>
