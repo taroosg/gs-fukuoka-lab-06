@@ -25,7 +25,7 @@
 
 <!-- ここにFirebaseのコードを貼り付けよう -->
 <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyAfiXSG63mRJrfnWb2pSHH-tCUtPptP-Qw",
