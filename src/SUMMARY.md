@@ -74,9 +74,9 @@
   - [機能追加](./js/js04/optimize.md)
   - [課題と提出時の注意点](./js/js04/work.md)
 
-<!-- - [JS_API](./js/js05/README.md)
+- [JS_API](./js/js05/README.md)
 
-  - [API とは](./js/js05/about-api.md)
+  <!-- - [API とは](./js/js05/about-api.md)
   - [GoogleBooks API](./js/js05/booksapi.md)
   - [位置情報の活用](./js/js05/geolocation.md)
   - [BingMapsAPI/準備](./js/js05/bingmapsapi-setup.md)
