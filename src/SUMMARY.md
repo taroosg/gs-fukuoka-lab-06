@@ -76,14 +76,14 @@
 
 - [JS_API](./js/js05/README.md)
 
-  <!-- - [API とは](./js/js05/about-api.md)
+  - [API とは](./js/js05/about-api.md)
   - [GoogleBooks API](./js/js05/booksapi.md)
   - [位置情報の活用](./js/js05/geolocation.md)
   - [BingMapsAPI/準備](./js/js05/bingmapsapi-setup.md)
   - [BingMapsAPI/実践](./js/js05/bingmapsapi-map.md)
   - [【おまけ】BingMapsAPI/機能追加](./js/js05/bingmapsapi-pin.md)
   - [その他の API 紹介](./js/js05/other-api.md)
-  - [課題](./js/js05/work.md) -->
+  - [課題](./js/js05/work.md)
 
 <!-- - [JS 修練場](./js/js06/readme.md)
 

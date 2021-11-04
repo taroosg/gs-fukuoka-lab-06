@@ -1,8 +1,8 @@
 # JS_API
 
-<!-- ## サンプルコード
+## サンプルコード
 
-[download](../../samples/05_js_api_sample.zip) -->
+[download](../../samples/05_js_api_sample.zip)
 
 ## 事前準備
 
@@ -16,7 +16,7 @@
 
 [https://kaoruya.org/blog/ms-account/#i-3](https://kaoruya.org/blog/ms-account/#i-3)
 
-<!-- ## 本講義の内容とゴール
+## 本講義の内容とゴール
 
 ### 本講義の内容
 
@@ -28,4 +28,4 @@
 
 - Web アプリケーションにおけるリクエストとレスポンスの概念を把握する．
 - JavaScript を用いた API 連携処理を実装することで，処理の基本的な流れを理解する．
-- 自分のアイデアから関連する API を探し，実装にチャレンジできるようになる． -->
+- 自分のアイデアから関連する API を探し，実装にチャレンジできるようになる．
