@@ -96,7 +96,7 @@
   - [061-070](./js/js06/061-070.md)
   - [071-080](./js/js06/071-080.md)
 
-<!-- - [チーム開発 01 JS 選手権](./js/js_contest/README.md) -->
+- [チーム開発 01 JS 選手権](./js/js_contest/README.md)
 
 <!-- - [PHP 事前準備](./php/php_setup/README.md) -->
 
