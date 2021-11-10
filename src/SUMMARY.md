@@ -97,6 +97,7 @@
   - [071-080](./js/js06/071-080.md)
 
 - [チーム開発 01 JS 選手権](./js/js_contest/README.md)
+  - [GitHub を用いたシンプルなチーム開発](./git/team-github.md)
 
 <!-- - [PHP 事前準備](./php/php_setup/README.md) -->
 
