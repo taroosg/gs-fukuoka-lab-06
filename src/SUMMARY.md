@@ -42,6 +42,7 @@
     - [設定ファイルの編集](./git/github-setup/config.md)
     - [GitHub への SSH 鍵登録](./git/github-setup/add-ssy-key-to-github.md)
     - [GitHub との接続設定](./git/github-setup/connect-to-github.md)
+  - [Git と GitHub を用いた開発の流れ](./git/develop-with-git-and-github.md)
   - [GitHub にプロダクトを push](./git/github-init.md)
   - [GitHub に最新版を push](./git/github-push.md)
   - [GitHub Pages を用いたデプロイ](./git/github-pages.md)
